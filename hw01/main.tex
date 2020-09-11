@@ -25,7 +25,7 @@
 
 \maketitle %creates title page.
     \begin{center} % Begins an environment in which everything is centered
-    Source code for this file can be found here: \url{https://github.com/txj44522/Phys5311TJ}
+    Source code for this file can be found in the hw01 folder here: \url{https://github.com/txj44522/Phys5311TJ}
     \end{center} % Ends the center environment.
 \newpage %Creates page break. 
 \tableofcontents %Creates a Table of Contents.
@@ -48,26 +48,30 @@ My favorite physics equation is Gauss's Law:
 where $E$ is the electric field, $\hat{n}$ is the unit vector perpendicular to the surface, $A$ is the area, $q_{enc}$ is the charge enclosed by the surface, and $\epsilon_o$ is the permittivity of free space. % $$ allows to place math directly into the line of text
 In words, Equation \ref{eq:1} % to allow cross referencing//
 states that the electric field through a closed surface is equal to the change enclosed divided by the permittivity of free space. 
-Here is a table of each symbol and its meaning:
+Table \ref{tab:1} list each symbol and its meaning.
 
-\begin{table}[ht] % begins table environment. The argument ht decribes the position of the table to be "here at top of the page". 
+\begin{table}[!h] % begins table environment. The argument !h forces the position of the table to be "here". 
     \begin{center} %begins the center environment.
       \begin{tabular}{l|l|l}  %Begins tabular environment. Each column is separated b y an "|" and the text is aligned left in each column.
         \hline %creates a horizontal line.
-        Number & Symbol & Description\\  % each column is seperated using '&'. The \\ is used to create new row
+        Number & Symbol & Description\\  % each column is separated using '&'. The \\ is used to create new row
         \hline\hline  %creates two horizontal lines
         1 & $\oint_S$ & Integration along a closed surface\\ 
         2 & $E$ & Electric field\\ 
         3 & $\hat{n}$ & Unit vector perpendicular to the surface\\ 
         4 & $A$ & Area\\
         5 & $q_{enc}$ & The charge enclosed by the surface\\
-        6 & $\epsilon_o$ & The permittivity of free space
+        6 & $\epsilon_o$ & The permittivity of free space\\
+        \hline % horizontal line at bottom of table
      \end{tabular} % ends tabular environment
+     \caption{Symbols and Definitions} % creates caption for a table.
      \label{tab:1} % assigns the table a label. This table can now be cross referenced.
     \end{center} % ends center environment
 \end{table} % ends table environment
+
+
 \section{Review of Example Document} % new section
-I thought the example document was very thorough. 
+I thought the example document was very thorough and well written. I was able to find everything I needed for this homework assignment within the document. I had a little trouble remembering that you must cite a reference first before it is printed into the bibliography. I also learned that in order to ensure you are referencing the correct table or figure, the table or figure needs to have a caption or else it might get labeled a different number when you cross reference it; I don't believe that was specifically mentioned in the example document. 
 
 \section{Literature Reviews}% new section
 \begin{itemize} % begins a list environment
@@ -84,12 +88,12 @@ I thought the example document was very thorough.
 \end{itemize} % ends the list environment
 
 \section{Random Picture} %new section
-\begin{figure}[t] % begins the figure environment at the top of the page.
+\begin{figure}[!h] % begins the figure environment and forces the figure to appear "here".
     \begin{center} % centers the following 
-        \includegraphics[width=8cm]{horse.png}  % imports graphic as a specified size 
+        \includegraphics[width=10cm]{horse.png}  % imports graphic as a specified size 
         \caption{A stallion.} % Writes caption below the graphic. 
         \label{fig:horse} % Labels the graphic and allows for cross referencing.
-    \end{center} % ends centeing
+    \end{center} % ends centering
 \end{figure} % ends figure environment
 Figure \ref{fig:horse} % cross references the figure labeled horse
 shows a horse galloping in a field. This horse looks very similar to my horse named Boe. 
