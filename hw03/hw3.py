@@ -5,7 +5,7 @@ This script will read and open a given DST file and IMF file using two different
  Bz, DST, and Density. Any of the plots can be modified as needed.
 '''
 
-from hw03 import sciprog, sciprog3
+import sciprog, sciprog3 # modules to read, open, parse imf and dst data
 import matplotlib.pyplot as plt # import matplotlib.plt for plotting purposes
 
 data = sciprog.read_imf('imf_jul2000.dat') # the return statement for the sciprog module
