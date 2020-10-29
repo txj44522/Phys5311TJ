@@ -6,7 +6,7 @@ is averaged over 5 runs and is plotted as a function of mutation rate, number of
 Author: Tre'Shunda James
 '''
 # Import the necessary module for the weasel function
-from hw4 import weaselprog_2_
+import weaselprog_2_
 # Import the plotting module
 import matplotlib.pyplot as plt
 
